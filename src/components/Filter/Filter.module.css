@@ -1,0 +1,63 @@
+.divFilter {
+  margin-bottom: 10px;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  /* Center align the filter section */
+}
+
+.divFilter p {
+  margin: 0 auto 10px;
+  color: #333;
+  /* Adds a bit of contrast */
+  font-size: 18px;
+  /* Slightly larger font for visibility */
+}
+
+input[type='text'],
+input[type='tel'] {
+  width: 90%;
+  padding: 15px;
+  /* Slightly more padding for a larger input area */
+  border: 2px solid #ccc;
+  /* Makes the border a bit thicker for focus effect */
+  border-radius: 10px;
+  /* More rounded borders for a modern look */
+  display: block;
+  margin: 20px auto;
+  /* Adds more space around the inputs */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for all properties */
+  font-size: 16px;
+  /* Larger font size for readability */
+  background-color: #f7f7f7;
+  /* Slight grey background for the input */
+}
+
+input[type='text']:focus,
+input[type='tel']:focus {
+  outline: none;
+  border-color: #50b7f5;
+  /* A more vibrant color for focus */
+  box-shadow: 0 4px 10px rgba(80, 183, 245, 0.25);
+  /* Adds a glow effect */
+  transform: scale(1.02);
+  /* Slightly enlarges the input on focus */
+}
+
+/* Adding a simple animation to make the filter section stand out */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.divFilter {
+  animation: fadeInDown 0.5s ease-out forwards;
+}
